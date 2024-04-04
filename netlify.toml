@@ -14,21 +14,61 @@
   status = 200
 
 [[redirects]]
-  from = "/images/small/*"
-  to = "/.netlify/images/?w=500&fit=cover&url=/images/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/images/medium/*"
-  to = "/.netlify/images/?w=600&fit=cover&url=/images/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/images/large/*"
-  to = "/.netlify/images/?w=700&fit=cover&url=/images/:splat"
-  status = 200
-
-[[redirects]]
+    from = "/images/smallest/*"
+    to = "/.netlify/images/?w=320&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/small-retina/*"
+    to = "/.netlify/images/?w=640&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/narrow/*"
+    to = "/.netlify/images/?w=400&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/mid/*"
+    to = "/.netlify/images/?w=740&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/wide/*"
+    to = "/.netlify/images/?w=1200&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/average/*"
+    to = "/.netlify/images/?w=375&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/average-retina/*"
+    to = "/.netlify/images/?w=750&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/average-retina-3x/*"
+    to = "/.netlify/images/?w=1125&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/large/*"
+    to = "/.netlify/images/?w=414&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/large-retina/*"
+    to = "/.netlify/images/?w=828&fit=cover&url=/images/:splat"
+    status = 200
+  
+  [[redirects]]
+    from = "/images/large-retina-3x/*"
+    to = "/.netlify/images/?w=1242&fit=cover&url=/images/:splat"
+    status = 200
+    
+  [[redirects]]
   from = "/images/original/*"
   to = "/.netlify/images/?url=/images/:splat"
   status = 200
