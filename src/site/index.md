@@ -6,12 +6,12 @@ layout: default
 Take a look at [the code on GitHub]({{ pkg.repository.url }}), or read on, for more explanation and examples.
 
 {% set somePhotos = [
-  {url: "lighthouse-5.jpg", credit: "ezgi yıldırım", creditURL: "https://unsplash.com/photos/Ej1mWW2cd6Q"}
+  {url: "annie-spratt.jpg", credit: "annie-spratt-", creditURL: "https://unsplash.com/"}
 ] %}
 <section class="post-teaser">
 {%- for photo in somePhotos %}
   <div class="credit">By <a href="{{ photo.creditURL }}" target="_BLANK" rel="noopener"> {{ photo.credit }}</a>, (<a href="/images/original/{{ photo.url }}" target="_BLANK" rel="noopener">Original</a>)</div>
-  {% lazypicture photo.url, "A snazzy lighthouse" %}
+  {% lazypicture photo.url, "Unsplash" %}
 {%- endfor -%}
 </section >
 
@@ -43,16 +43,16 @@ The [redirects]({{ pkg.repository.url }}/blob/master/netlify.toml) and transform
 These images have been added to the page in various sizes, using the picture element with multiple image sources.
 
 {% set somePhotos = [
-  {url: "lighthouse-4.jpg", credit: "Charlota Blunarova", creditURL: "https://unsplash.com/photos/of4r2gHpCqU"},
-  {url: "lighthouse-3.jpg", credit: "Jesse Orrico", creditURL: "https://unsplash.com/photos/5xWf-gE_45U"},
-  {url: "lighthouse-2.jpg", credit: "Youjeen Cho", creditURL: "https://unsplash.com/photos/kNxB07EA9r4"},
-  {url: "lighthouse-1.jpg", credit: "Chris Meads", creditURL: "https://unsplash.com/photos/9FidI-IQxwY"}
+  {url: "beier-c-26iVrIcRjDU-unsplash.jpg", credit: "Beier", creditURL: "https://unsplash.com/"},
+  {url: "danny-greenberg-.jpg", credit: "Danny Greenberg", creditURL: "https://unsplash.com/"},
+  {url: "eugenivy_now.jpg", credit: "Youjeen Cho", creditURL: "https://unsplash.com/"},
+  {url: "joanna-stolowicz-.jpg", credit: "Joanna Stolowicz", creditURL: "https://unsplash.com/"}
 ] %}
 
 <section class="post-teaser">
 {%- for photo in somePhotos %}
   <div class="credit">By <a href="{{ photo.creditURL }}" target="_BLANK" rel="noopener"> {{ photo.credit }}</a>, (<a href="/images/original/{{ photo.url }}" target="_BLANK" rel="noopener">Original</a>)</div>
-  {% lazypicture photo.url, "A snazzy lighthouse" %}
+  {% lazypicture photo.url, "Misc Unsplash Pictures" %}
 {%- endfor -%}
 </section >
 
